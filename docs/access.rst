@@ -51,10 +51,10 @@ Starting Kolibri on Linux and MacOS will differ depending on the method you used
 
     .. warning:: On macOS you may need to prefix the command with ``python``, and type ``python -m kolibri start`` instead.
 
-  2. Open the default browser at ``http://127.0.0.1:8080``, and it will display the **Kolibri** start page.
+  2. Open a web browser at ``http://127.0.0.1:8080``, the location of the **Kolibri** start page *from your local device*.
 
     .. note::
-      Remember to :ref:`configure other computers <access_LAN>` in the network to access **Kolibri** content.
+      The special address ``127.0.0.1`` is not accessible from other devices on the network. See: :ref:`accessing Kolibri from other devices in the network <access_LAN>`.
 
   3. Run this command in Terminal to stop Kolibri:
 
@@ -65,30 +65,17 @@ Starting Kolibri on Linux and MacOS will differ depending on the method you used
 
 .. _access_LAN:
 
-Accessing Kolibri from Other Devices in the Network
-===================================================
+Accessing Kolibri from A Local Network
+======================================
 
-After you have installed and started Kolibri on the computer that will act as a server, you need to configure other devices in the the same `Local Area Network <https://en.wikipedia.org/wiki/Local_area_network>`_ (LAN), such as other computers, tablets or phones, so they can access the the learning content on the server.
+If you have installed and started Kolibri on a computer that is connected to a local network (hotspot, cabled ethernet etc.), you can access Kolibri from other devices on the same network. In cases where Kolibri is made accessible on a local network, we call the computer with kolibri a **server** and the other devices on the network, we call **clients**.
 
-Compatibility
-*************
+The Server's External IP
+************************
 
-Kolibri currently supports the following combinations of operating systems and browsers for client devices:
+You need to know the server's external :ref:`IP address <ips>` to access it from other devices in the the same network.
 
-* Windows 7, 8.1 and 10, with IE 11+, Chrome and Firefox
-* MacOS 10.6+ with Safari, Chrome and Firefox
-* Linux, any browser
-* Android 4.2+, Chrome and Firefox
-* iOS, Chrome and Firefox supported, **Safari not supported**
-
-.. warning:: Videos are MP4 encoded. While most browsers do not require additional plugins or codecs, open source platforms will often require you to install MP4 codecs separately: For instance on Ubuntu, install the `restricted extras package <https://help.ubuntu.com/community/RestrictedFormats>`__.
-
-Set up Access on Other Devices
-******************************
-
-To access content from other devices in the same network, you need to know the :ref:`IP address <ips>` of the computer where Kolibri is running. 
-
-For example, if Kolibri is installed and started on a computer with the IP address **192.168.0.104**, you can access it from an Android tablet connected to the same network by opening the browser on the tablet and typing the address ``http://192.168.0.104:8080``.
+For example, if Kolibri is installed and started on a computer with the IP address **192.168.0.104**, you can access it from an Android tablet connected to the same network by opening the browser on the tablet and typing the address ``http://192.168.0.104:8080``. When running ``kolibri start`` in your Terminal, you will see information about the server's IP address.
 
 
 .. tip::
@@ -105,7 +92,7 @@ For example, if Kolibri is installed and started on a computer with the IP addre
 .. note::
   * In case of network problems, see :ref:`troubleshooting tips <network>`.
   * Examples and comparison of `Hardware Configurations for Kolibri <https://learningequality.org/r/hardware>`__ (PDF document).
-
+  * Be sure to read about :ref:`system requirements <sys_reqs>` for both the server and the clients.
 
 .. Access Kolibri on Android
 .. *************************
