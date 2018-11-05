@@ -259,8 +259,8 @@ Restart the server, and your files should be seamlessly detected at the new loca
 
 Alternatively, you can follow these steps in the GUI.
 
-#. Go to **Computer > Advanced System Settings** and press the :guilabel:`Environment Variables` button.
-#. Under **User Variables for...** press the :guilabel:`New...` button.
+#. Go to **Computer > Advanced System Settings** and press the :guilabel:`ENVIRONMENT VARIABLES` button.
+#. Under **User Variables for...** press the :guilabel:`NEW...` button.
 #. Input ``KOLIBRI_HOME`` in the **Variable name** field, and your new path in the **Variable value** field, and press :guilabel:`OK` on both open windows.
 
     .. figure:: img/env-vars.png
